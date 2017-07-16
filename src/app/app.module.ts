@@ -4,12 +4,14 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { routingComponents, appRouting } from './app.routing';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
 import { ShopComponent } from './shop/shop.component';
 import { CartComponent } from './cart/cart.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { AboutComponent } from './about/about.component';
-import { HomeComponent } from './home/home.component';
+
+
 
 @NgModule({
   declarations: [
