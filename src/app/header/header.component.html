@@ -1,0 +1,42 @@
+<nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container">
+    <div id="search">
+      <i class="glyphicon glyphicon-search"></i>
+      <span class="cart-name">Suche</span>
+    </div>
+    <input id="search-input" type="search" placeholder="suche" (keyup)="search($event);" />
+      <!--<a class="navbar-brand" style="text-align:center; width:100%; display:block;" href="#">Online Shop</a>-->
+      <img id="logo" src="./assets/logo.png" alt="logo" title="logo" />
+  </div>
+  <div id="login" (click)=showLogin()>
+    <i class="glyphicon glyphicon-user"></i>
+    <span class="cart-name">Login</span>
+  </div>
+  <div id="cart">
+    <a routerLink="/cart" routerLinkActive="active">
+      <span>{{price() |currency:'EUR':true }} </span>
+      <i class="glyphicon glyphicon-shopping-cart"></i>
+      <span id="count">{{count()}}</span>
+      <span class="cart-name">Warenkorb</span>
+    </a>
+  </div>
+
+</nav>
+
+
+<div id="filter" *ngIf="showDiv()">
+  <button id="color" (click)=showColor()>Farbe</button>
+  <button id="size" (click)=sizeColor()>Größe</button>
+  <button id="details" (click)=detailsColor()>Details</button>
+  <!--
+  <div class="col-md-6 col-md-offset-3">
+    <button (click)="sendMessage()">Send Message</button>
+    <button (click)="clearMessage()">Clear Message</button>
+</div>
+-->
+</div>
+<!--
+<div id="header-img">
+  <img style="width:100%; height:250px; margin-top: 70px;"  src="http://localhost:4200/assets/{{headerimg}}" />
+</div>
+-->
