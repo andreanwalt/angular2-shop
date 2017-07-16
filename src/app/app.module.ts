@@ -6,12 +6,16 @@ import { AppComponent } from './app.component';
 import { routingComponents, appRouting } from './app.routing';
 import { ShopComponent } from './shop/shop.component';
 import { CartComponent } from './cart/cart.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ShopComponent,
-    CartComponent
+    CartComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
