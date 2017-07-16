@@ -1,3 +1,49 @@
-<p>
-  footer works!
-</p>
+<footer>
+  <div class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
+    <div class="container">
+      <div class="navbar-collapse collapse" id="footer-body">
+        <ul class="nav navbar-nav">
+          <li><a href="#">Browse Our Library</a></li>
+          <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
+          <li><a routerLink="/about" routerLinkActive="active">Über Uns</a></li>
+          <li><a routerLink="/shop" routerLinkActive="active">Shop</a></li>
+          <li><a routerLink="/contact" routerLinkActive="active">Kontakt</a></li>
+          <li><a routerLink="/trends" routerLinkActive="active">Trends</a></li>
+
+
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Richtlinien <span class="caret"></span></a>
+            <ul class="dropdown-menu navbar-inverse">
+              <li><a href="#"></a></li>
+              <li><a routerLink="privacy/datenschutz" routerLinkActive="active">Datenschutz</a></li>
+              <li><a routerLink="privacy/agb" routerLinkActive="active">AGB</a></li>
+              <li><a href="#">Nutzungsbedingungen</a></li>
+              <li><a routerLink="imprint" routerLinkActive="active">Impressum</a></li>
+
+
+              <li role="separator" class="divider"></li>
+              <li class="dropdown-header">Sonstiges</li>
+              <li><a routerLink="privacy/press" routerLinkActive="active">Presse</a></li>
+              <li><a href="#">Affiliate Partnerprogramm</a></li>
+              <li><a href="#">Liefergebiete</a></li>
+              <li><a routerLink="privacy/jobs" routerLinkActive="active">Jobs</a></li>
+            </ul>
+          </li>
+          <li><a routerLink="/help" routerLinkActive="active">Hilfe</a></li>
+        </ul>
+      </div>
+    	<div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#footer-body">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <ul class="footer-bar-btns visible-xs">
+          <li><a href="#" class="btn" title="History"><i class="fa fa-2x fa-clock-o blue-text"></i></a></li>
+          <li><a href="#" class="btn" title="Favourites"><i class="fa fa-2x fa-star yellow-text"></i></a></li>
+          <li><a href="#" class="btn" title="Subscriptions"><i class="fa fa-2x fa-rss-square orange-text"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
