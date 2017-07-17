@@ -1,15 +1,36 @@
 import { Component, OnInit } from '@angular/core';
+import {CartService} from './../cart.service';
 
 @Component({
   selector: 'ag-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.sass']
+  styleUrls: ['./header.component.sass'],
+  providers: [CartService]
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  values = '';
+  mybool:boolean;
+  headerimg: string;
 
-  ngOnInit() {
+  constructor(
+    private cartService: CartService
+  ){}
+
+
+  ngOnInit(){
   }
+
+
+  count(){
+    let count = this.cartService.countItem();
+    return count;
+  }
+
+  price(){
+    let price = this.cartService.price();
+    return price;
+  }
+
 
 }

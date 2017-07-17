@@ -1,0 +1,6 @@
+{
+  "/album":{
+    "target": "http://localhost:8888/zf-apigility-skeleton/public",
+    "secure": false
+  }
+}
