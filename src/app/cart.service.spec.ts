@@ -3,6 +3,7 @@ import { TestBed, inject } from '@angular/core/testing';
 import { CartService } from './cart.service';
 
 describe('CartService', () => {
+
   beforeEach(() => {
     TestBed.configureTestingModule({
       providers: [CartService]
@@ -119,26 +120,5 @@ describe('CartService', () => {
       expect(val).toEqual(2);
     });
   });
-
-
-/*
-  describe('add', () => {
-    it('should return Array', () => {
-      let cs = new CartService();
-
-
-      let item = {
-        id: 1,
-        name: 'name',
-        description: 'test1',
-      }
-
-      let add = cs.add(item);
-      let getcart = cs.getCart();
-
-      expect(JSON.stringify(getcart.length)).toEqual('1');
-    });
-  });
-*/
 
 });
