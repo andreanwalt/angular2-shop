@@ -1,3 +1,9 @@
-<p>
+<h1>
   shop works!
-</p>
+</h1>
+<hr  />
+<ul *ngFor="let product of (products$ | async)">
+  <li class="panel">
+   <ag-product [product]="product"></ag-product>
+  </li>
+</ul>

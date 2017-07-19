@@ -1,3 +1,18 @@
-<p>
-  product works!
-</p>
+
+<div class="active">
+  <h2 class="headline">{{product.title}}</h2>
+  <img src="./assets/product-image.png" alt="" title="title" />
+  {{product.description}} | {{product.genre}}
+  <!--<div class="size">
+    Größen: XXL / XL / L / M / S
+  </div>-->
+  <div class="price">
+    {{product.price}} &euro;
+  </div>
+  <div class="order-list">
+    <button (click)="decreaseQuantity()" class="dec" type="button"><span>&minus;</span></button>
+    <input (change)="changeQuantity()" [value]="qty"   name="qty" id="qty" class="pieces" type="number" [(ngModel)]="qty" maxlength="3" tooltip="Der Mindestbestellwert muss 1 betragen."/>
+    <button (click)="increaseQuantity()" class="inc" type="button" tooltip="Anzahl des Artikels um 1 erhöhen!"><span>&#43;</span></button>
+    <button (click)="addCart(product)" class="order"><i class="glyphicon glyphicon-shopping-cart"></i></button>
+  </div>
+</div>

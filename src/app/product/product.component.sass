@@ -1,0 +1,123 @@
+.headline
+  margin: 5px 0 5px 0;
+  padding: 0;
+  font-size: 15px;
+  
+app-product
+  width: 100%;
+  overflow: hidden;
+
+img
+  width: 100%;
+
+.size
+  position: relative;
+  position: absolute;
+  bottom: 60px;
+  text-transform: uppercase;
+
+/* order-list */
+.order-list
+  background: #ccc;
+  padding: 2px 0 1px 0;
+  position: absolute;
+  bottom: 10px;
+  width: calc(100% - 20px);
+  box-sizing: border-box;
+
+.inc span,
+.dec span
+  font-weight: 800;
+  margin-top: -4px;
+  margin-left: 1px;
+  color: red;
+  display: block;
+  font-size: 18px;
+  padding: 0;
+  height: auto;
+
+.inc
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  box-sizing: border-box;
+  background: #fff;
+  border: none;
+  float: left;
+  margin-right: 2px;
+
+.dec
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  box-sizing: border-box;
+  background: #fff;
+  border: none;
+  float: left;
+  margin-right: 1px;
+  margin-left: 2px;
+
+.pieces
+  height: 32px;
+  margin: 0;
+  margin-top: -1px;
+  width: 40px;
+  display: inline-block;
+  float: left;
+  margin-right: 1px;
+  margin-left: 0;
+  text-align: center;
+  outline: none;
+
+
+input[type=number]::-webkit-inner-spin-button
+  -webkit-appearance: none;
+
+.order
+  width: calc(100% - 108px);
+  height: 30px;
+  padding: 5px;
+  box-sizing: border-box;
+  background: #fff;
+  color: #26B80D;
+  border: none;
+  float: left;
+  -webkit-transition:  .3s; /* Safari */
+  transition:  .3s;
+
+.order:hover
+  background: #000;
+  color: #fff;
+
+textarea:focus,
+input:focus,
+button:focus
+    outline: none;
+
+.price
+  float: right;
+  font-size: 18px;
+  font-weight: 500;
+
+
+a[title]:hover::after
+  content: attr(title);
+  padding: 4px 8px;
+  color: #FFF;
+  background-color: black;
+
+img:hover
+  cursor: pointer;
+
+.order
+  color: #000;
+  background: #fff;
+
+.active .order
+  background: #000;
+  color: #fff;
+
+
+.active .order:hover
+  background: #fff;
+  color: #000;

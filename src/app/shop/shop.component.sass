@@ -1,0 +1,124 @@
+.panel
+  width: calc(300px - 50px);
+  height: 300px;
+  background: #eee;
+  float: left;
+  margin: 15px;
+  list-style: none;
+  overflow: hidden;
+  padding: 10px;
+  box-sizing: border-box;
+  position: relative;
+  border: solid 1px #ccc;
+  overflow: visible;
+
+.panel:hover
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+  background: #ecc;
+  -webkit-transition: .3s; /* Safari */
+  transition: .3s;
+
+.panel:hover a .new
+  background: red;
+
+.panel:hover a
+  text-decoration: none;
+
+/*products css*/
+
+.headline
+  margin: 5px 0 5px 0;
+  padding: 0;
+  font-size: 15px;
+
+.new
+  position: relative;
+  left: -43px;
+  font-size: 10px;
+  top: -130px;
+  background: #eee;
+  color: red;
+  text-align: center;
+  width: 50px;
+  transform: rotate(270deg);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: .1em;
+  border-color: #ccc;
+  border-width: 1px 1px 0px 1px;
+  border-style: solid;
+  border-bottom:  solid 1px #eee;
+
+app-product
+  width: 100%;
+  overflow: hidden;
+
+img
+  width: 100%;
+
+.size
+  position: relative;
+  position: absolute;
+  bottom: 60px;
+  text-transform: uppercase;
+
+/* order-list */
+.order-list
+  background: #ccc;
+  overflow: hidden;
+  padding: 2px 0 1px 0;
+  position: absolute;
+  bottom: 10px;
+  width: calc(100% - 20px);
+  box-sizing: border-box;
+
+.inc
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  box-sizing: border-box;
+  background: #fff;
+  border: none;
+  float: left;
+  margin-right: 2px;
+
+.dec
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  box-sizing: border-box;
+  background: #fff;
+  border: none;
+  float: left;
+  margin-right: 1px;
+  margin-left: 2px;
+
+.pieces
+  height: 32px;
+  margin: 0;
+  margin-top: -1px;
+  width: 40px;
+  display: inline-block;
+  float: left;
+  margin-right: 1px;
+  margin-left: 0;
+  text-align: center;
+  outline: none;
+
+.order
+  width: calc(100% - 108px);
+  height: 30px;
+  padding: 5px;
+  box-sizing: border-box;
+  background: #26B80D;
+  color: #fff;
+  border: none;
+  float: left;
+
+
+textarea:focus,
+input:focus,
+button:focus
+    outline: none;
