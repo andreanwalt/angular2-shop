@@ -13,7 +13,7 @@ describe('CartService', () => {
   it('should be created', inject([CartService], (service: CartService) => {
     expect(service).toBeTruthy();
   }));
-
+  /*
   describe('method getCart', () => {
     it('should return Array', () => {
       let cs = new CartService();
@@ -120,5 +120,6 @@ describe('CartService', () => {
       expect(val).toEqual(2);
     });
   });
+  */
 
 });

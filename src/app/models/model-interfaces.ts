@@ -16,6 +16,17 @@ export interface Products {
   genre?: string;
 }
 
+export interface Cart {
+  id?: number;
+  title?: string;
+  description?: string;
+  tags?: Tag[];
+  favorite?: boolean;
+  state?: string;
+  assignee?: User;
+  genre?: string;
+}
+
 export const states = ['BACKLOG', 'IN_PROGRESS', 'TEST', 'COMPLETED'];
 
 

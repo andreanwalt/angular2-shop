@@ -1,19 +1,21 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Products } from './../models/model-interfaces';
 import { FormsModule } from '@angular/forms';
+import {CartService} from './../cart.service';
 
 @Component({
   selector: 'ag-product',
   templateUrl: './product.component.html',
   styleUrls: ['./product.component.sass'],
-  inputs: ['product']
+  inputs: ['product'],
+  providers: [CartService],
 })
 export class ProductComponent{
 
   private product: Products;
   private qty: number = 1;
 
-  constructor(){
+  constructor(private cartService: CartService){
 
   }
 
@@ -23,6 +25,7 @@ export class ProductComponent{
 
   increaseQuantity(){
     this.product["qty"] = ++this.qty;
+    this.cartService.increaseQuantity();
     return this.product["qty"];
   }
 
@@ -30,10 +33,12 @@ export class ProductComponent{
     if(this.qty > 1)
       this.qty--;
 
+    this.cartService.decreaseQuantity();
     return this.qty;
   }
 
   addCart(product){
+    this.cartService.addItem(product);
     console.log(product);
   }
 
@@ -51,6 +56,7 @@ export class ProductComponent{
     if(this.qty < 0)
       this.qty = 1;
 
+    this.cartService.updateQuantity();
     this.product["qty"] = this.qty;
   }
 

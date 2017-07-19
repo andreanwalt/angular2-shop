@@ -1,3 +1,43 @@
-<p>
-  cart works!
-</p>
+
+  <div class="col-12 col-md-12">
+    <h1>Warenkorb</h1>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th class="delete"></th>
+          <th class="article">Artikel</th>
+          <th class="stk">Stück</th>
+          <th class="price">Preis</th>
+          <th class="total">Gesamtpreis</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of getCart(); let i = index;">
+          <td class="delete"><span (click)="deleteItem(item)"><i class="glyphicon glyphicon-trash"></i></span></td>
+          <td>{{item.artist}}</td>
+          <td class="stk">
+            <span (click)="dec(item)" class="dec" type="button"><span>&minus;</span></span>
+            <input  class="qty" type="number" value="{{item.qty}}" maxlength="3" /><!--(click)="pieces()" (keyup)="changeqty() "-->
+            <span (click)="inc(item)" class="inc" type="button"><span>&#43;</span></span>
+          </td>
+          <td class="price">{{item.price |currency:'EUR':true }}</td>
+          <td class="total">{{item.qty * item.price |currency:'EUR':true }}<span>zzgl.MwSt.</span></td>
+        </tr>
+
+      </tbody>
+    </table>
+    <table class="table table-striped total-list">
+      <tbody>
+        <tr>
+          <td id="total-name">Gesamtsumme: </td>
+          <td class="total">{{price() |currency:'EUR':true }}<span>zzgl.MwSt.</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <button>Bestellen</button>
+    <button routerLink="/shop" routerLinkActive="active">zurück zum Shop</button>
+    <div class="container">
+      <button class="btn btn-default" >Show confirm</button><!--(click)=showConfirm()-->
+    </div>
+  </div>

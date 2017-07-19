@@ -31,7 +31,7 @@ export class ShopComponent implements OnInit {
   private products: Products[];
 
 
-  constructor(private productService: ProductService, ) { } // private http: Http
+  constructor(private productService: ProductService ) { } // private http: Http
 
   ngOnInit() {
     this.products$ = this.productService.getProducts();

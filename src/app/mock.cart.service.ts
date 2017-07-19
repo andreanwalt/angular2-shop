@@ -1,11 +1,48 @@
 import {BehaviorSubject} from 'rxjs/BehaviorSubject';
-import {Products} from './models/model-interfaces';
+import {Cart} from './models/model-interfaces';
 
-export class MockProductService {
+export class MockCartervice {
 
-  products$ = new BehaviorSubject<Products[]>([]);
+  cart$ = new BehaviorSubject<Cart[]>([]);
 
-  getProducts() {
-    return new BehaviorSubject<Products[]>([]);
+  getCart() {
+    return new BehaviorSubject<Cart[]>([]);
   }
+
+  addItem(item){
+    return new BehaviorSubject<Cart[]>([]);
+  }
+
+  deleteItem(item){
+    return new BehaviorSubject<Cart[]>([]);
+  }
+
+  increaseQuantity(item){
+    return new BehaviorSubject<Cart[]>([]);
+  }
+
+  decreaseQuantity(item){
+    return new BehaviorSubject<Cart[]>([]);
+  }
+
+  updateQuantity(item){
+    return new BehaviorSubject<Cart[]>([]);
+  }
+
+  findIndexById(id) {
+    return new BehaviorSubject<Cart[]>([]);
+  }
+
+  countItem(){
+    return new BehaviorSubject<Cart[]>([]);
+  }
+
+  getTotal(){
+    return new BehaviorSubject<Cart[]>([]);
+  }
+
+  price(){
+    return new BehaviorSubject<Cart[]>([]);
+  }
+
 }

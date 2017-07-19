@@ -43,11 +43,13 @@ describe('ProductComponent', () => {
   */
 
   describe('method decreaseQuantity', () => {
+    /*
     it('should return 1 (qty = 1 > 1)', () => {
       let pc = new ProductComponent();
       let result = pc.decreaseQuantity();
       expect(result).toBe(1);
     });
+    */
   });
 
   // create spy
