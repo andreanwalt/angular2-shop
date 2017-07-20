@@ -1,19 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-
-import {ProductService} from './../product.service';
-import {Http, Response} from '@angular/http';
-
-import {Observable}  from 'rxjs/Observable';
-import {Observer}  from 'rxjs/Observer';
-import {Subscriber}  from 'rxjs/Subscriber';
-import { Subscription } from 'rxjs/Subscription';
-import {Subject}  from 'rxjs/Subject';
-import {BehaviorSubject}  from 'rxjs/BehaviorSubject';
-
+import { ProductService } from './../product.service';
+import { Observable }  from 'rxjs/Observable';
 import { Products } from './../models/model-interfaces';
-
-
-
 
 @Component({
   selector: 'ag-shop',
@@ -23,17 +11,12 @@ import { Products } from './../models/model-interfaces';
 })
 export class ShopComponent implements OnInit {
 
-  // create Observable ;)
-  products$: Observable<Products[]>;
+  // create products Observable
+  private products$: Observable<Products[]>;
 
-  // Arbeiten mit Oberservables
-  private $products: Observable<Products[]>;
-  private products: Products[];
+  constructor(private productService: ProductService ) { }
 
-
-  constructor(private productService: ProductService ) { } // private http: Http
-
-  ngOnInit() {
+  ngOnInit(): void {
     this.products$ = this.productService.getProducts();
   }
 

@@ -10,9 +10,8 @@ export interface Products {
   title?: string;
   description?: string;
   tags?: Tag[];
-  favorite?: boolean;
-  state?: string;
-  assignee?: User;
+  price: number;
+  qty?: number;
   genre?: string;
 }
 

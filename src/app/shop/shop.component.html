@@ -3,8 +3,8 @@
 </h1>
 <hr  />
 <div class="wrapper">
-  <ul *ngFor="let product of (products$ | async)">
-    <li class="panel">
+  <ul>
+    <li class="panel" *ngFor="let product of (products$ | async)">
      <ag-product [product]="product"></ag-product>
     </li>
   </ul>

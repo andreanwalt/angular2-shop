@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Products } from './../models/model-interfaces';
 import { FormsModule } from '@angular/forms';
-import {CartService} from './../cart.service';
+import { CartService } from './../cart.service';
 
 @Component({
   selector: 'ag-product',
@@ -10,7 +10,7 @@ import {CartService} from './../cart.service';
   inputs: ['product'],
   providers: [CartService],
 })
-export class ProductComponent{
+export class ProductComponent implements OnInit{
 
   private product: Products;
   private qty: number = 1;
@@ -19,48 +19,44 @@ export class ProductComponent{
 
   }
 
-  ngOnInit() {
-    this.qty = 1+this.product['qty'];
+  ngOnInit(): void {
+    this.qty = this.product['qty'];
   }
 
-  increaseQuantity(){
-    this.product["qty"] = ++this.qty;
-    this.cartService.increaseQuantity();
-    return this.product["qty"];
+  increaseQuantity(): void {
+    // todo max quantity
+    ++this.qty;
   }
 
-  decreaseQuantity(){
+  decreaseQuantity(): void {
+    // min quantity qty > 1
     if(this.qty > 1)
-      this.qty--;
-
-    this.cartService.decreaseQuantity();
-    return this.qty;
+      --this.qty;
   }
 
-  addCart(product){
-    this.cartService.addItem(product);
-    console.log(product);
-  }
-
-  changeQuantity($event){
-    let c = confirm("Are you sure about this?")
-
-    // accept confirm
-    if(c){
-        //True, accept the value
-    } else {
-        this.qty = 1;
-    }
-
-    // qty > 0
-    if(this.qty < 0)
+  changeQuantity($event): void {
+    // min quantity qty < 0
+    if(this.qty <= 0){
       this.qty = 1;
-
-    this.cartService.updateQuantity();
-    this.product["qty"] = this.qty;
+      return;
+    }
   }
 
-  // todo
+  addCart(product): void {
+    product.qty = this.qty;
+    this.cartService.addItem(product);
+  }
+
+  isActive(id): boolean{
+    if(this.cartService.findIndexById(id) === null){
+      return false;
+    }
+    else{
+      return true;
+    }
+  }
+
+  // todo make dialog
   showProduct(){
     return 1;
   }
