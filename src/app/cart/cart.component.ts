@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {CartService} from './../cart.service';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'ag-cart',
@@ -8,11 +9,14 @@ import {CartService} from './../cart.service';
   providers: [CartService]
 })
 export class CartComponent implements OnInit {
+  item = {};
+  minlen = 3;
 
-  constructor(private cartService: CartService) { }
+  constructor(private cartService: CartService) {  }
 
   ngOnInit(): void {
     var cart = this.getCart();
+     var maxLength = '10';
   }
 
   getCart(){
@@ -36,6 +40,8 @@ export class CartComponent implements OnInit {
   }
 
   changeQuantity(event, id): void {
+    if(event.srcElement.value.length > 3)
+      event.srcElement.value = 999;
     this.cartService.updateQuantity(id, event.srcElement.value);
   }
 

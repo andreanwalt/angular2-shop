@@ -16,7 +16,8 @@
         <td>{{item.artist}}{{item.title}}</td>
         <td class="stk">
           <span (click)="decrease(item)" class="dec" type="button"><span>&minus;</span></span>
-          <input (change)="changeQuantity($event, item.id)" class="qty" type="number" value="{{item.qty}}" maxlength="3" /><!--(click)="pieces()" (keyup)="changeqty() "-->
+          <!--type="number" not work with maxlength-->
+          <input (change)="changeQuantity($event, item.id)" class="qty" type="text" value="{{item.qty}}" maxlength=3 />
           <span (click)="increase(item)" class="inc" type="button"><span>&#43;</span></span>
         </td>
         <td class="price">{{item.price | currency:'EUR':true }}</td>
@@ -36,6 +37,6 @@
   <button>Bestellen</button>
   <button routerLink="/shop" routerLinkActive="active">zurück zum Shop</button>
   <div class="container">
-    <button class="btn btn-default" >Show confirm</button><!--(click)=showConfirm()-->
+    <button class="btn btn-default" >Show confirm</button><!-- todo (click)=showConfirm()-->
   </div>
 </div>

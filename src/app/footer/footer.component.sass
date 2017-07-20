@@ -15,3 +15,17 @@ a:focus
 
 .dropdown a
   color: red;
+
+.footer-bar-btns,
+.visible-xs
+  list-style: none;
+
+@media (max-width: 767px)
+  ul, ol
+    margin-bottom: 0px;
+
+  .visible-xs
+    display: inline-block !important;
+
+  .navbar-header
+    height: 50px;
