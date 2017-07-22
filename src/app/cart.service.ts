@@ -23,7 +23,16 @@ export class CartService  {
      localStorage.setItem('cart', JSON.stringify(cart));
     }else{
       var idx = this.findIndexById(item.id);
-      cart[idx].qty =  item.qty + cart[idx].qty;
+      // max qty
+      if(item.qty + cart[idx].qty > 999){
+        let c = confirm('Sie haben die maximale von 999 Stück dieses Artikels im Warenkorb!');
+        if(c)
+          cart[idx].qty = 999;
+        else
+          return;
+      }else{
+        cart[idx].qty =  item.qty + cart[idx].qty;
+      }
       localStorage.setItem('cart', JSON.stringify(cart));
     }
 
@@ -56,12 +65,13 @@ export class CartService  {
     }
   }
 
-  
+
   updateQuantity(id, value): void {
     console.log("CartService call updateQuantity");
     let cart = JSON.parse(localStorage.getItem('cart'));
     var idx = this.findIndexById(id);
-    cart[idx].qty = value;
+    // string to integer input type text
+    cart[idx].qty = parseInt(value);
     localStorage.setItem('cart', JSON.stringify(cart));
   }
 

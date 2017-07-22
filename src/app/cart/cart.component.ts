@@ -25,14 +25,15 @@ export class CartComponent implements OnInit {
   }
 
   deleteItem(item): void {
-    let c = confirm("Are you sure?")
+    let c = confirm('Sind Sie sicher, das der Artikel "' + item.title + '" aus dem Warenkorb entfernt werden soll?')
     // accept confirm
     if(c)
       this.cartService.deleteItem(item);
   }
 
   increase(item): void {
-    this.cartService.increaseQuantity(item);
+    if(item.qty < 999)
+      this.cartService.increaseQuantity(item);
   }
 
   decrease(item): void {
@@ -42,6 +43,8 @@ export class CartComponent implements OnInit {
   changeQuantity(event, id): void {
     if(event.srcElement.value.length > 3)
       event.srcElement.value = 999;
+    if(event.srcElement.value < 1)
+      event.srcElement.value = 1;
     this.cartService.updateQuantity(id, event.srcElement.value);
   }
 

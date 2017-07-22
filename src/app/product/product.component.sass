@@ -2,6 +2,12 @@
   margin: 5px 0 5px 0;
   padding: 0;
   font-size: 15px;
+  display: inline-block;
+  width: 180px;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+
 
 app-product
   width: 100%;
@@ -120,3 +126,19 @@ img:hover
 .active .order:hover
   background: #fff;
   color: #000;
+
+.active:hover .order
+  background: #000;
+  color: #fff;
+
+// distance price
+.description
+  width: 70%;
+  float: left;
+  height: 40px;
+
+.details
+  font-size: .9em;
+  text-align: left;
+  float: left;
+  width: 100%;

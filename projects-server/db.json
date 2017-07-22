@@ -98,6 +98,195 @@
       "price": 25.99,
       "qty": 1,
       "genre": ""
+    },
+    {
+      "id": 12,
+      "title": "dub Nirvana - Nevermind",
+      "description": "Album Vinyl",
+      "tags": [],
+      "price": 13.99,
+      "qty": 22,
+      "genre": "Grunge"
+    },
+    {
+      "id": 13,
+      "title": "dub David Bowie - The Next Day",
+      "description": "Album Vinyl",
+      "tags": [],
+      "price": 15.99,
+      "qty": 12,
+      "genre": "Grunge"
+    },
+    {
+      "id": 14,
+      "title": "dub Justin Timberlake - The 20/20 Experience",
+      "description": "Album Vinyl",
+      "tags": [],
+      "price": 48.99,
+      "qty": 12,
+      "genre": "Pop, R&B"
+    },
+    {
+      "id": 15,
+      "title": "dub Kraftwerk - Die Mensch Maschine",
+      "description": "Album Vinyl",
+      "tags": [],
+      "price": 13.99,
+      "qty": 1,
+      "genre": ""
+    },
+    {
+      "id": 16,
+      "title": "dub Kraftwerk - Autobahn",
+      "description": "Album Vinyl",
+      "tags": [],
+      "price": 23.99,
+      "qty": 1,
+      "genre": ""
+    },
+    {
+      "id": 17,
+      "title": "dub Fischmob - Männer Können Seine Gefühle Nicht Zeigen",
+      "description": "Album Vinyl",
+      "tags": [],
+      "price": 45.99,
+      "qty": 1,
+      "genre": ""
+    },
+    {
+      "id": 18,
+      "title": "dub Fischmob - Power",
+      "description": "Album Vinyl",
+      "tags": [],
+      "price": 79.95,
+      "qty": 1,
+      "genre": ""
+    },
+    {
+      "id": 19,
+      "title": "dub AC/DC - Powerage",
+      "description": "Album Vinyl",
+      "tags": [],
+      "price": 19.99,
+      "qty": 1,
+      "genre": ""
+    },
+    {
+      "id": 20,
+      "title": "dub AC/DC -  Fly on the Wall",
+      "description": "Album Vinyl",
+      "tags": [],
+      "price": 9.99,
+      "qty": 1,
+      "genre": ""
+    },
+    {
+      "id": 21,
+      "title": "dub AC/DC - High Voltage",
+      "description": "Album Vinyl",
+      "tags": [],
+      "price": 19.99,
+      "qty": 1,
+      "genre": ""
+    },
+    {
+      "id": 22,
+      "title": "dub U2 -  THE JOSHUA TREE",
+      "description": "Album Vinyl",
+      "tags": [],
+      "price": 25.99,
+      "qty": 1,
+      "genre": ""
+    },
+    {
+      "id": 23,
+      "title": "dub David Bowie - The Next Day",
+      "description": "Album Vinyl",
+      "tags": [],
+      "price": 15.99,
+      "qty": 12,
+      "genre": "Grunge"
+    },
+    {
+      "id": 24,
+      "title": "dub Justin Timberlake - The 20/20 Experience",
+      "description": "Album Vinyl",
+      "tags": [],
+      "price": 48.99,
+      "qty": 12,
+      "genre": "Pop, R&B"
+    },
+    {
+      "id": 25,
+      "title": "dub Kraftwerk - Die Mensch Maschine",
+      "description": "Album Vinyl",
+      "tags": [],
+      "price": 13.99,
+      "qty": 1,
+      "genre": ""
+    },
+    {
+      "id": 26,
+      "title": "dub Kraftwerk - Autobahn",
+      "description": "Album Vinyl",
+      "tags": [],
+      "price": 23.99,
+      "qty": 1,
+      "genre": ""
+    },
+    {
+      "id": 27,
+      "title": "dub Fischmob - Männer Können Seine Gefühle Nicht Zeigen",
+      "description": "Album Vinyl",
+      "tags": [],
+      "price": 45.99,
+      "qty": 1,
+      "genre": ""
+    },
+    {
+      "id": 28,
+      "title": "dub Fischmob - Power",
+      "description": "Album Vinyl",
+      "tags": [],
+      "price": 79.95,
+      "qty": 1,
+      "genre": ""
+    },
+    {
+      "id": 29,
+      "title": "dub AC/DC - Powerage",
+      "description": "Album Vinyl",
+      "tags": [],
+      "price": 19.99,
+      "qty": 1,
+      "genre": ""
+    },
+    {
+      "id": 30,
+      "title": "dub AC/DC -  Fly on the Wall",
+      "description": "Album Vinyl",
+      "tags": [],
+      "price": 9.99,
+      "qty": 1,
+      "genre": ""
+    },
+    {
+      "id": 31,
+      "title": "dub AC/DC - High Voltage",
+      "description": "Album Vinyl",
+      "tags": [],
+      "price": 19.99,
+      "qty": 1,
+      "genre": ""
+    },
+    {
+      "id": 32,
+      "title": "dub U2 -  THE JOSHUA TREE",
+      "description": "Album Vinyl",
+      "tags": [],
+      "price": 25.99,
+      "qty": 1,
+      "genre": ""
     }
   ]
 }

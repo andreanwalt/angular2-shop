@@ -41,12 +41,15 @@ describe('ShopComponent', () => {
     expect(component).toBeTruthy();
   });
 
+  /*
   it('should render title in a h1 tag with static text', async(() => {
     const fixture = TestBed.createComponent(ShopComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
     expect(compiled.querySelector('h1').textContent).toContain('shop works');
   }));
+  */
+
 
   describe('Test MockProductService', () => {
 
@@ -64,7 +67,7 @@ describe('ShopComponent', () => {
       });
       */
   });
-
+/*
   it("should allow HTML (with async)", () => {
     TestBed.compileComponents().then(() => {
       fixture = TestBed.createComponent(ShopComponent);
@@ -72,7 +75,7 @@ describe('ShopComponent', () => {
       expect(fixture.nativeElement.querySelector('.panel').textContent).toContain('Content1');
     });
   });
-
+*/
 
 
 });

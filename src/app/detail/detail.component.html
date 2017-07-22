@@ -1,0 +1,38 @@
+<div  class="modal-dialog">
+  <div class="modal-content">
+
+   <div class="modal-header">
+     <button type="button" class="close" (click)="close()">&times;</button>
+     <h4 class="modal-title">{{v.title}}</h4>
+   </div>
+
+   <div class="modal-body">
+     <p><img style="float:left; margin-right:10px" width="360px" src="./assets/product-image.png" alt="" title="title" />
+       Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+     </p>
+    <!--<pre>{{ v | json }}  </pre>-->
+    {{itemid}}
+    {{itemname }}<br />
+    <span>Verfügbar: </span>{{v.available}} <br />
+    <span>Genre:</span> {{v.genre}}
+
+    <span>id: </span>{{v.id}}
+    <span>title: </span>{{v.title}}
+    <span>description: </span>{{v.description}}
+    <span>tags: </span>{{v.tags}}
+    <span>price: </span>{{v.price}}
+    <span>qty: </span>{{v.qty}}
+    <span>genre: </span>{{v.genre}}
+   </div>
+   <div class="modal-footer">
+   <button (click)="add(v)" type="button" class="btn">in den Warenkorb</button>
+
+  <div class="order-list">
+     <button (click)="increaseQuantity()" class="inc" type="button"><span>&#43;</span></button>
+     <input  (change)="changeQuantity()" class="pieces" type="number" [(ngModel)]="v.qty" />
+     <button (click)="decreaseQuantity()" class="dec" type="button"><span>&minus;</span></button>
+   </div>
+
+ </div>
+ </div>
+</div>

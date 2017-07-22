@@ -1,11 +1,28 @@
-<h1>
-  shop works!
-</h1>
-<hr  />
+<!--
 <div class="wrapper">
   <ul>
-    <li class="panel" *ngFor="let product of (products$ | async)">
-     <ag-product [product]="product"></ag-product>
+    <li class="panel search-results" *ngFor="let product of (products$ | async)"
+            infiniteScroll
+            [infiniteScrollDistance]="2"
+            [infiniteScrollUpDistance]="1.5"
+            [infiniteScrollThrottle]="500"
+            (scrolled)="onScrollDown()"
+            (scrolledUp)="onScrollUp()">
+      <ag-product [product]="product"></ag-product>
     </li>
   </ul>
 </div>
+-->
+
+    <ul class="search-results {{ modalIsOpen }}" style="overflow:hidden"
+         infinite-scroll
+         InfiniteScrollDistance="5"
+         InfiniteScrollContainer="2000"
+            infiniteScrollThrottle="1000"
+         (scrolled)="onScrollDown()"
+
+         >
+      <li class="panel search-results" *ngFor="let product of array">
+        <ag-product [product]="product"></ag-product>
+      </li>
+    </ul>
