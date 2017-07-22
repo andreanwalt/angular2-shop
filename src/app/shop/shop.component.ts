@@ -16,23 +16,13 @@ export class ShopComponent implements OnInit {
   private products$: Observable<Products[]>;
 
 
-  //////////////////
-  array = [];
-
-  title = 'This is Angular InfiniteScroll v';
-
-  modalIsOpen = '';
-  modalTitle = 'scroll to update';
-
-
-  modalScrollDistance = 2;
-  modalScrollThrottle = 10;
-
-  allocatedAssetsList = [];
-  errorMessage ="";
-
-  counter = 10;
-  //////////////////
+  // infinitescroll
+  private array = [];
+  private modalScrollDistance: number = 2;
+  private modalScrollThrottle: number = 10;
+  private allocatedAssetsList: Array<any> = [];
+  private counter: number = 10;
+  private errorMessage: string = "";
 
   constructor(private productService: ProductService ) {
     for (let i = 0; i < this.counter; ++i) {
@@ -40,8 +30,6 @@ export class ShopComponent implements OnInit {
     this.productService.getProducts().subscribe(
       res => {
         this.allocatedAssetsList = res;
-        //console.log(this.allocatedAssetsList[0].id);
-        console.log(this.allocatedAssetsList.length);
         this.array.push(this.allocatedAssetsList[i]);
       },
       error =>  this.errorMessage = <any>error);
@@ -53,7 +41,7 @@ export class ShopComponent implements OnInit {
     this.products$ = this.productService.getProducts();
   }
 
-  onScrollDown():void {
+  onScrollDown(): void {
     const start = this.counter; // start push from array
     this.counter += 10;   // end push from array
 
@@ -61,7 +49,6 @@ export class ShopComponent implements OnInit {
       this.productService.getProducts().subscribe(
         res => {
           this.allocatedAssetsList = res;
-          console.log('length: '+this.allocatedAssetsList.length);
           if(this.array.length < this.allocatedAssetsList.length)
             this.array.push(this.allocatedAssetsList[i]);
         },
