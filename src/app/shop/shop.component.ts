@@ -35,12 +35,6 @@ export class ShopComponent implements OnInit {
   //////////////////
 
   constructor(private productService: ProductService ) {
-
-    //////////////////
-
-    //////////////////
-    //////////////////
-    //console.log('ha: ' +this.allocatedAssetsList.length);
     for (let i = 0; i < this.counter; ++i) {
 
     this.productService.getProducts().subscribe(
@@ -51,56 +45,28 @@ export class ShopComponent implements OnInit {
         this.array.push(this.allocatedAssetsList[i]);
       },
       error =>  this.errorMessage = <any>error);
-
     }
-    //////////////////
-
-
 
   }
 
   ngOnInit(): void {
     this.products$ = this.productService.getProducts();
   }
-  /*
-  onScrollDown () {
-          console.log('scrolled down!!')
-      }
 
-      onScrollUp () {
-      	console.log('scrolled up!!')
-      }
-  */
-
-  //////////////////
-
-  onScrollDown () {
-    // add another 10 items
-
+  onScrollDown():void {
     const start = this.counter; // start push from array
     this.counter += 10;   // end push from array
-    /*
-    for (let i = start; i < this.counter; ++i) {
-      this.array.push(i);
-    }
-    */
-    ///
-    for (let i = start; i < this.counter; ++i) {
 
+    for (let i = start; i < this.counter; ++i) {
       this.productService.getProducts().subscribe(
         res => {
           this.allocatedAssetsList = res;
-          //console.log(this.allocatedAssetsList[0].id);
           console.log('length: '+this.allocatedAssetsList.length);
           if(this.array.length < this.allocatedAssetsList.length)
             this.array.push(this.allocatedAssetsList[i]);
         },
         error =>  this.errorMessage = <any>error);
-
     }
-    ///
-
   }
-  //////////////////
 
 }
