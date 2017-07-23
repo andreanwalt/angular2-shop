@@ -18,3 +18,18 @@ input
 
 .col
   overflow: hidden;
+
+
+
+
+// Validator Style
+
+// input field
+.ng-valid[required], .ng-valid.required
+  border-left: 5px solid #42A948; /* green */
+  
+.ng-invalid:not(form)
+  border-left: 5px solid #a94442; /* red */
+
+.alert
+  margin-top: 10px;

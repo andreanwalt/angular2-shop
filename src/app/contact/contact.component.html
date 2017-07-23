@@ -1,20 +1,63 @@
-<p>
-  contact works!
-</p>
-<fieldset>
-  <legend>Kontaktformular</legend>
-<form >
-  <div class="col col-md-8">
-    <label>Name</label>
-    <input type="text" class="form-control" name="name" placeholder="Name" type="text" maxlength="10" />
+<div id="wrapper">
+  <!--<p>
+    contact works!
+  </p>-->
+  <div class="no-style" style="margin-left: 4px">
+    <div class="container">
+        <h1>Kontaktformular</h1>
+
+
+        <form #agForm="ngForm" (ngSubmit)="onSubmit()">
+          <pre>Model: {{diagnostic}}</pre>
+
+          <!-- Titel input -->
+          <div class="form-group">
+            <label for="title">Titel</label>
+            <select class="form-control" id="title" [(ngModel)]="model.title" #title="ngModel" name="title" required>
+              <option value="" disabled selected>Titel wählen</option>
+              <option *ngFor="let title of titles" [value]="title">{{title}}</option>
+            </select>
+            <!-- error message -->
+            <div *ngIf="title.errors && (title.dirty || title.touched)" class="alert alert-danger">
+              <div [hidden]="title.valid || title.pristine">Vorname ist ein Pflichtfeld!</div>
+            </div>
+            <br />
+            <pre>Valid: {{title.valid}}</pre>
+          </div>
+
+          <!-- Vorname input -->
+          <div class="form-group">
+            <label for="firstname">Vorname</label>
+            <input class="form-control" type="text" id="firstname" [(ngModel)]="model.firstname" #firstname="ngModel" name="firstname" minlength="3" maxlength="100" required>
+            <!-- error message -->
+            <div *ngIf="firstname.errors && (firstname.dirty || firstname.touched)" class="alert alert-danger">
+              <div [hidden]="firstname.valid || firstname.pristine">Vorname ist ein Pflichtfeld!</div>
+              <div [hidden]="!lastname.errors.minlength">Nachname muss mindestens 4 Zeichen lang sein.</div>
+              <div [hidden]="!lastname.errors.maxlength">Nachname kann nicht länger als 24 Zeichen lang sein.</div>
+            </div>
+            <br />
+            <pre>Valid: {{firstname.valid}}</pre>
+          </div>
+
+          <!-- Nachname input -->
+          <div class="form-group">
+            <label for="lastname">Nachname</label>
+            <input class="form-control" type="text" class="form-control" id="lastname"  [(ngModel)]="model.lastname" #lastname="ngModel" name="lastname" minlength="3" maxlength="24" required />
+            <!-- error message -->
+            <div *ngIf="lastname.errors && (lastname.dirty || lastname.touched)" class="alert alert-danger">
+              <div [hidden]="!lastname.errors.required">Nachname ist ein Pflichtfeld!</div>
+              <div [hidden]="!lastname.errors.minlength">Nachname muss mindestens 4 Zeichen lang sein.</div>
+              <div [hidden]="!lastname.errors.maxlength">Nachname kann nicht länger als 24 Zeichen lang sein.</div>
+            </div>
+            <br />
+            <pre>Valid: {{lastname.valid}} | Pristine: {{lastname.pristine}} </pre>
+          </div>
+
+          <!-- Submit  input -->
+          <button type="submit" class="btn btn-success">Submit</button>
+
+        </form>
+    </div>
   </div>
   <br /><br /><br /><br />
-  <div class="col col-md-8">
-    <label>Nachname</label>
-    <input type="text" class="form-control" name="name" placeholder="Name" type="text" maxlength="10" />
-  </div>
-
-
-
-</form>
-</fieldset>
+</div>
