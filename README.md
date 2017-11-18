@@ -1,4 +1,4 @@
-# Angular2Shop
+# Angular 2/4 Shop
 
 ![alt text](https://github.com/andregaertner/angular2-shop/blob/master/src/assets/screenshot.png)
 
