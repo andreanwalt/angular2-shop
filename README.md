@@ -1,5 +1,8 @@
 # Angular2Shop
 
+![alt text](https://github.com/andregaertner/angular2-shop/blob/master/src/assets/screenshot.png)
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.0.
 
 prefix: ag
