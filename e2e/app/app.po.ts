@@ -6,6 +6,6 @@ export class Angular2ShopPage {
   }
 
   getParagraphText() {
-    return element(by.css('ag-root h1')).getText();
+    return element(by.id('info-text')).getText();
   }
 }
