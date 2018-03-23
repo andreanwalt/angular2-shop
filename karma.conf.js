@@ -10,7 +10,9 @@ module.exports = function (config) {
       require('karma-chrome-launcher'),
       require('karma-jasmine-html-reporter'),
       require('karma-coverage-istanbul-reporter'),
-      require('@angular/cli/plugins/karma')
+      require('@angular/cli/plugins/karma'),
+      require('junit'),
+      require('karma-junit-reporter')
     ],
     client:{
       clearContext: false // leave Jasmine Spec Runner output visible in browser
@@ -22,7 +24,13 @@ module.exports = function (config) {
     angularCli: {
       environment: 'dev'
     },
-    reporters: ['progress', 'kjhtml'],
+
+    reporters: ['progress', 'kjhtml', 'dots', 'junit'], // new jenkins 'dots', 'junit'
+    jenkinsReporter: {
+      outputFile: 'test-results.xml',
+      //suite: 'foobar',                 // this will be mapped to the package
+      //classnameSuffix: 'browser-test'
+    },
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,

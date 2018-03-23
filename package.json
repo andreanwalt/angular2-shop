@@ -26,6 +26,8 @@
     "bootstrap": "^3.3.7",
     "core-js": "^2.4.1",
     "jquery": "^3.2.1",
+    "junit": "^1.4.9",
+    "karma-junit-reporter": "^1.2.0",
     "ng2-bootstrap-modal": "^1.0.1",
     "ngx-bootstrap": "^1.7.1",
     "ngx-infinite-scroll": "^0.5.1",

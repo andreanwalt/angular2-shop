@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<testsuite name="Chrome 65.0.3325 (Mac OS X 10.13.2)" package="" timestamp="2018-03-23T12:42:07" id="0" hostname="Andres-MBP.home" tests="12" errors="0" failures="0" time="0.554">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36"/>
+  </properties>
+  <testcase name="AboutComponent should be created" time="0.099" classname="Chrome_65_0_3325_(Mac_OS_X_10_13_2).AboutComponent"/>
+  <testcase name="AppComponent should create the app" time="0.067" classname="Chrome_65_0_3325_(Mac_OS_X_10_13_2).AppComponent"/>
+  <testcase name="AppComponent should have as title 'ag'" time="0.024" classname="Chrome_65_0_3325_(Mac_OS_X_10_13_2).AppComponent"/>
+  <testcase name="AppComponent should render title in a h1 tag" time="0.026" classname="Chrome_65_0_3325_(Mac_OS_X_10_13_2).AppComponent"/>
+  <testcase name="CartService should be created" time="0.012" classname="Chrome_65_0_3325_(Mac_OS_X_10_13_2).CartService"/>
+  <testcase name="ContactComponent should be created" time="0.146" classname="Chrome_65_0_3325_(Mac_OS_X_10_13_2).ContactComponent"/>
+  <testcase name="FooterComponent should be created" time="0.047" classname="Chrome_65_0_3325_(Mac_OS_X_10_13_2).FooterComponent"/>
+  <testcase name="HeaderComponent should be created" time="0.047" classname="Chrome_65_0_3325_(Mac_OS_X_10_13_2).HeaderComponent"/>
+  <testcase name="HomeComponent should be created" time="0.021" classname="Chrome_65_0_3325_(Mac_OS_X_10_13_2).HomeComponent"/>
+  <testcase name="MessageService should be created" time="0.011" classname="Chrome_65_0_3325_(Mac_OS_X_10_13_2).MessageService"/>
+  <testcase name="ProductService should be created" time="0.009" classname="Chrome_65_0_3325_(Mac_OS_X_10_13_2).ProductService"/>
+  <testcase name="ShopComponent should be created" time="0.045" classname="Chrome_65_0_3325_(Mac_OS_X_10_13_2).ShopComponent"/>
+  <system-out>
+    <![CDATA[
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>
