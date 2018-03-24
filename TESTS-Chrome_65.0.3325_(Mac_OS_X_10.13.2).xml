@@ -1,20 +1,20 @@
 <?xml version="1.0"?>
-<testsuite name="Chrome 65.0.3325 (Mac OS X 10.13.2)" package="" timestamp="2018-03-24T11:46:41" id="0" hostname="Andres-MBP.home" tests="12" errors="0" failures="0" time="0.552">
+<testsuite name="Chrome 65.0.3325 (Mac OS X 10.13.2)" package="" timestamp="2018-03-24T11:52:12" id="0" hostname="Andres-MBP.home" tests="12" errors="0" failures="0" time="0.553">
   <properties>
     <property name="browser.fullName" value="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36"/>
   </properties>
-  <testcase name="AboutComponent should be created" time="0.107" classname="Chrome_65_0_3325_(Mac_OS_X_10_13_2).AboutComponent"/>
-  <testcase name="AppComponent should create the app" time="0.06" classname="Chrome_65_0_3325_(Mac_OS_X_10_13_2).AppComponent"/>
-  <testcase name="AppComponent should have as title 'ag'" time="0.028" classname="Chrome_65_0_3325_(Mac_OS_X_10_13_2).AppComponent"/>
-  <testcase name="AppComponent should render title in a h1 tag" time="0.028" classname="Chrome_65_0_3325_(Mac_OS_X_10_13_2).AppComponent"/>
-  <testcase name="CartService should be created" time="0.011" classname="Chrome_65_0_3325_(Mac_OS_X_10_13_2).CartService"/>
-  <testcase name="ContactComponent should be created" time="0.142" classname="Chrome_65_0_3325_(Mac_OS_X_10_13_2).ContactComponent"/>
-  <testcase name="FooterComponent should be created" time="0.05" classname="Chrome_65_0_3325_(Mac_OS_X_10_13_2).FooterComponent"/>
-  <testcase name="HeaderComponent should be created" time="0.043" classname="Chrome_65_0_3325_(Mac_OS_X_10_13_2).HeaderComponent"/>
-  <testcase name="HomeComponent should be created" time="0.021" classname="Chrome_65_0_3325_(Mac_OS_X_10_13_2).HomeComponent"/>
+  <testcase name="AboutComponent should be created" time="0.1" classname="Chrome_65_0_3325_(Mac_OS_X_10_13_2).AboutComponent"/>
+  <testcase name="AppComponent should create the app" time="0.062" classname="Chrome_65_0_3325_(Mac_OS_X_10_13_2).AppComponent"/>
+  <testcase name="AppComponent should have as title 'ag'" time="0.026" classname="Chrome_65_0_3325_(Mac_OS_X_10_13_2).AppComponent"/>
+  <testcase name="AppComponent should render title in a h1 tag" time="0.029" classname="Chrome_65_0_3325_(Mac_OS_X_10_13_2).AppComponent"/>
+  <testcase name="CartService should be created" time="0.01" classname="Chrome_65_0_3325_(Mac_OS_X_10_13_2).CartService"/>
+  <testcase name="ContactComponent should be created" time="0.157" classname="Chrome_65_0_3325_(Mac_OS_X_10_13_2).ContactComponent"/>
+  <testcase name="FooterComponent should be created" time="0.056" classname="Chrome_65_0_3325_(Mac_OS_X_10_13_2).FooterComponent"/>
+  <testcase name="HeaderComponent should be created" time="0.035" classname="Chrome_65_0_3325_(Mac_OS_X_10_13_2).HeaderComponent"/>
+  <testcase name="HomeComponent should be created" time="0.019" classname="Chrome_65_0_3325_(Mac_OS_X_10_13_2).HomeComponent"/>
   <testcase name="MessageService should be created" time="0.014" classname="Chrome_65_0_3325_(Mac_OS_X_10_13_2).MessageService"/>
-  <testcase name="ProductService should be created" time="0.009" classname="Chrome_65_0_3325_(Mac_OS_X_10_13_2).ProductService"/>
-  <testcase name="ShopComponent should be created" time="0.039" classname="Chrome_65_0_3325_(Mac_OS_X_10_13_2).ShopComponent"/>
+  <testcase name="ProductService should be created" time="0.008" classname="Chrome_65_0_3325_(Mac_OS_X_10_13_2).ProductService"/>
+  <testcase name="ShopComponent should be created" time="0.037" classname="Chrome_65_0_3325_(Mac_OS_X_10_13_2).ShopComponent"/>
   <system-out>
     <![CDATA[
 ]]>
