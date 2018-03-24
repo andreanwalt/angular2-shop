@@ -75,6 +75,7 @@ describe('ProductComponent', () => {
 
   });
 
+  
   describe('method decreaseQuantity', () => {
     /*
     it('should return 1 (qty = 1 > 1)', () => {
