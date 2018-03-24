@@ -25,9 +25,6 @@ describe('ProductComponent', () => {
     var qty = 1;
   });
   
-  it('should be created', () => {
-    expect(component).toBeTruthy();
-  });
   /*
   it('should be created', () => {
     //expect(component).toBeTruthy();
@@ -71,8 +68,6 @@ describe('ProductComponent', () => {
       expect(component.qty).toBe(1);
     });
     */
-
-
   });
 
   
