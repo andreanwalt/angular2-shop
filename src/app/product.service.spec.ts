@@ -20,11 +20,14 @@ describe('ProductService', () => {
     });
   });
 
-  
+
   it('should be created', inject([ProductService], (service: ProductService) => {
     expect(service).toBeTruthy();
   }));
 
+  it('should be created', inject([ProductService], (service: ProductService) => {
+    expect(service).toEqual('A');;
+  }));
   /*
   describe('method getCart', () => {
 
