@@ -36,5 +36,3 @@ Run `npm run typedoc` to execute create documentation
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-
-## junit xml file can be used for integraded jenkins CI
