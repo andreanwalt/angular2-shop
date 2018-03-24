@@ -24,7 +24,10 @@ describe('ProductComponent', () => {
     //component.product.title = "";
     var qty = 1;
   });
-
+  
+  it('should be created', () => {
+    expect(component).toBeTruthy();
+  });
   /*
   it('should be created', () => {
     //expect(component).toBeTruthy();
