@@ -26,7 +26,6 @@ describe('ProductService', () => {
   }));
 
 
-  /*
   describe('method getCart', () => {
 
     it("should return 'A'", () => {
@@ -35,6 +34,6 @@ describe('ProductService', () => {
       expect(result.toString()).toEqual('A');
     });
   });
-  */
+ 
 
 });
