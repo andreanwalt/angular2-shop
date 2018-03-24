@@ -1,28 +1,20 @@
 <?xml version="1.0"?>
-<testsuite name="Chrome 65.0.3325 (Mac OS X 10.13.2)" package="" timestamp="2018-03-24T11:37:56" id="0" hostname="Andres-MBP.home" tests="13" errors="0" failures="1" time="0.588">
+<testsuite name="Chrome 65.0.3325 (Mac OS X 10.13.2)" package="" timestamp="2018-03-24T11:46:41" id="0" hostname="Andres-MBP.home" tests="12" errors="0" failures="0" time="0.552">
   <properties>
     <property name="browser.fullName" value="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36"/>
   </properties>
-  <testcase name="AboutComponent should be created" time="0.104" classname="Chrome_65_0_3325_(Mac_OS_X_10_13_2).AboutComponent"/>
-  <testcase name="AppComponent should create the app" time="0.071" classname="Chrome_65_0_3325_(Mac_OS_X_10_13_2).AppComponent"/>
-  <testcase name="AppComponent should have as title 'ag'" time="0.029" classname="Chrome_65_0_3325_(Mac_OS_X_10_13_2).AppComponent"/>
-  <testcase name="AppComponent should render title in a h1 tag" time="0.024" classname="Chrome_65_0_3325_(Mac_OS_X_10_13_2).AppComponent"/>
-  <testcase name="CartService should be created" time="0.008" classname="Chrome_65_0_3325_(Mac_OS_X_10_13_2).CartService"/>
-  <testcase name="ContactComponent should be created" time="0.165" classname="Chrome_65_0_3325_(Mac_OS_X_10_13_2).ContactComponent"/>
-  <testcase name="FooterComponent should be created" time="0.06" classname="Chrome_65_0_3325_(Mac_OS_X_10_13_2).FooterComponent"/>
-  <testcase name="HeaderComponent should be created" time="0.035" classname="Chrome_65_0_3325_(Mac_OS_X_10_13_2).HeaderComponent"/>
-  <testcase name="HomeComponent should be created" time="0.023" classname="Chrome_65_0_3325_(Mac_OS_X_10_13_2).HomeComponent"/>
-  <testcase name="MessageService should be created" time="0.011" classname="Chrome_65_0_3325_(Mac_OS_X_10_13_2).MessageService"/>
-  <testcase name="ProductService should be created" time="0.01" classname="Chrome_65_0_3325_(Mac_OS_X_10_13_2).ProductService"/>
-  <testcase name="ProductService should be created" time="0.011" classname="Chrome_65_0_3325_(Mac_OS_X_10_13_2).ProductService">
-    <failure type="">Expected ProductService({ http: Http({ _backend: MockBackend({ connectionsArray: [  ], connections: Subject({ _isScalar: false, observers: [ Subscriber({ closed: false, _parent: null, _parents: null, _subscriptions: [ SubjectSubscription({ closed: false, _parent: &lt;circular reference: Object&gt;, _parents: null, _subscriptions: null, subject: &lt;circular reference: Object&gt;, subscriber: &lt;circular reference: Object&gt; }) ], syncErrorValue: null, syncErrorThrown: false, syncErrorThrowable: false, isStopped: false, destination: SafeSubscriber({ closed: false, _parent: null, _parents: null, _subscriptions: null, syncErrorValue: null, syncErrorThrown: false, syncErrorThrowable: false, isStopped: false, destination: Object({ closed: true, next: Function, error: Function, complete: Function }), _parentSubscriber: &lt;circular reference: Object&gt;, _context: &lt;circular reference: Object&gt;, _next: Function, _error: undefined, _complete: undefined }) }) ], closed: false, isStopped: false, hasError: false, thrownError: null }), pendingConnections: Subject({ _isScalar: false, observers: [  ], closed: false, isStopped: false, hasError: false, thrownError: null }) }), _defaultOptions: BaseRequestOptions({ method: 0, headers: Headers({ _headers: [object Map], _normalizedNames: [object Map] }), body: null, url: null, params: undefined, withCredentials: null, responseType: null }) }) }) to equal 'A'.
-    at Object.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/main.bundle.js:1354:25)
-    at TestBed.webpackJsonp../node_modules/@angular/core/@angular/core/testing.es5.js.TestBed.execute (http://localhost:9876/_karma_webpack_/vendor.bundle.js:48649:19)
-    at Object.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/vendor.bundle.js:48779:45)
-    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/polyfills.bundle.js:2862:26)
-</failure>
-  </testcase>
-  <testcase name="ShopComponent should be created" time="0.037" classname="Chrome_65_0_3325_(Mac_OS_X_10_13_2).ShopComponent"/>
+  <testcase name="AboutComponent should be created" time="0.107" classname="Chrome_65_0_3325_(Mac_OS_X_10_13_2).AboutComponent"/>
+  <testcase name="AppComponent should create the app" time="0.06" classname="Chrome_65_0_3325_(Mac_OS_X_10_13_2).AppComponent"/>
+  <testcase name="AppComponent should have as title 'ag'" time="0.028" classname="Chrome_65_0_3325_(Mac_OS_X_10_13_2).AppComponent"/>
+  <testcase name="AppComponent should render title in a h1 tag" time="0.028" classname="Chrome_65_0_3325_(Mac_OS_X_10_13_2).AppComponent"/>
+  <testcase name="CartService should be created" time="0.011" classname="Chrome_65_0_3325_(Mac_OS_X_10_13_2).CartService"/>
+  <testcase name="ContactComponent should be created" time="0.142" classname="Chrome_65_0_3325_(Mac_OS_X_10_13_2).ContactComponent"/>
+  <testcase name="FooterComponent should be created" time="0.05" classname="Chrome_65_0_3325_(Mac_OS_X_10_13_2).FooterComponent"/>
+  <testcase name="HeaderComponent should be created" time="0.043" classname="Chrome_65_0_3325_(Mac_OS_X_10_13_2).HeaderComponent"/>
+  <testcase name="HomeComponent should be created" time="0.021" classname="Chrome_65_0_3325_(Mac_OS_X_10_13_2).HomeComponent"/>
+  <testcase name="MessageService should be created" time="0.014" classname="Chrome_65_0_3325_(Mac_OS_X_10_13_2).MessageService"/>
+  <testcase name="ProductService should be created" time="0.009" classname="Chrome_65_0_3325_(Mac_OS_X_10_13_2).ProductService"/>
+  <testcase name="ShopComponent should be created" time="0.039" classname="Chrome_65_0_3325_(Mac_OS_X_10_13_2).ShopComponent"/>
   <system-out>
     <![CDATA[
 ]]>
