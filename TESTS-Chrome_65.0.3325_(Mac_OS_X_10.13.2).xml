@@ -22,6 +22,7 @@
     at Object.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/vendor.bundle.js:48779:45)
     at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/polyfills.bundle.js:2862:26)
 </failure>
+    
   </testcase>
   <system-out>
     <![CDATA[
