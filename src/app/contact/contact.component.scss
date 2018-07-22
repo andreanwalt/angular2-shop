@@ -1,35 +1,42 @@
-fieldset
+fieldset{
   overflow: hidden;
   width: 80%;
   margin: 0 auto;
   background: #ccc;
   padding: 30px;
+}
 
-legend
+legend{
   background: blue;
   overflow: hidden;
+}
 
-label
+label{
   background: none;
   display: block;
+}
 
-input
+input{
   background: #fff;
+}
 
-.col
+.col{
   overflow: hidden;
-
+}
 
 
 
 // Validator Style
 
 // input field
-.ng-valid[required], .ng-valid.required
+.ng-valid[required], .ng-valid.required{
   border-left: 5px solid #42A948; /* green */
-  
-.ng-invalid:not(form)
-  border-left: 5px solid #a94442; /* red */
+}
 
-.alert
+.ng-invalid:not(form){
+  border-left: 5px solid #a94442; /* red */
+}
+
+.alert{
   margin-top: 10px;
+}

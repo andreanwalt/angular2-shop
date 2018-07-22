@@ -16,7 +16,7 @@ export interface DetailModel {
 @Component({
   selector: 'ag-detail',
   templateUrl: './detail.component.html',
-  styleUrls: ['./detail.component.sass'],
+  styleUrls: ['./detail.component.scss'],
   providers: [CartService],
 })
 export class DetailComponent  extends DialogComponent<DetailModel, string> implements DetailModel{

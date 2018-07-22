@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 @Component({
   selector: 'ag-cart',
   templateUrl: './cart.component.html',
-  styleUrls: ['./cart.component.sass'],
+  styleUrls: ['./cart.component.scss'],
   providers: [CartService]
 })
 export class CartComponent implements OnInit {

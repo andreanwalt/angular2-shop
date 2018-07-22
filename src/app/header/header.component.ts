@@ -4,7 +4,7 @@ import {CartService} from './../cart.service';
 @Component({
   selector: 'ag-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.sass'],
+  styleUrls: ['./header.component.scss'],
   providers: [CartService]
 })
 export class HeaderComponent implements OnInit {

@@ -21,7 +21,7 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "ag",
       "styles": [
-        "styles.sass",
+        "styles.scss",
         "../node_modules/bootstrap/dist/css/bootstrap.min.css"
       ],
       "scripts": [
@@ -57,7 +57,13 @@
     }
   },
   "defaults": {
-    "styleExt": "sass",
-    "component": {}
+    "styleExt": "scss",
+    "component": {
+    }
+  },
+  "schematics": {
+           "@schematics/angular:component": {
+                   "styleext": "scss"
+             }
   }
 }

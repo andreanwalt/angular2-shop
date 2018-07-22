@@ -17,7 +17,7 @@ import {BehaviorSubject}  from 'rxjs/BehaviorSubject';
 @Component({
   selector: 'ag-product',
   templateUrl: './product.component.html',
-  styleUrls: ['./product.component.sass'],
+  styleUrls: ['./product.component.scss'],
   inputs: ['product'],
   providers: [CartService],
 })
