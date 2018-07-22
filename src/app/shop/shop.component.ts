@@ -7,7 +7,7 @@ import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 @Component({
   selector: 'ag-shop',
   templateUrl: './shop.component.html',
-  styleUrls: ['./shop.component.sass'],
+  styleUrls: ['./shop.component.scss'],
   providers: [ProductService],
 })
 export class ShopComponent implements OnInit {

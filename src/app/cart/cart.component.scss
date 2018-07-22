@@ -1,57 +1,64 @@
-.col-12
+.col-12{
     margin-bottom: 80px;
+}
 
-tbody td
+tbody td{
   padding-top: 16px;
+}
 
-.delete
+.delete{
   width: 30px;
   border-right: solid 1px #ccc;
+}
 
-.total
+.total{
   text-align: right;
   width: 200px;
   border-left: solid 1px #ccc;
 
-  span
+  span{
     font-size: 8px;
     position: relative;
     display: block;
     bottom: 0px;
     left: 0;
+  }
+}
 
-.price
+.price{
   text-align: center;
   width: 100px;
   border-left: solid 1px #ccc;
+}
 
-
-.article
+.article{
   text-align: left;
+}
 
-
-.stk
+.stk{
   text-align: center;
   width: 100px;
   border-left: solid 1px #ccc;
+}
 
-#total-name
+#total-name{
   font-weight: 800;
+}
 
-th
+th{
   text-align: center;
+}
 
-
-.total-list
+.total-list{
   border-top: solid 2px #000;
   background: red
+}
 
-
-.table
+.table{
   margin: 0;
+}
 
-
-button
+button{
   border: none;
   width: 200px;
   display: inline-block;
@@ -59,27 +66,31 @@ button
   margin-left: 10px;
   margin-top: 20px;
   padding: 12px 10px 12px 10px;
+}
 
-
-button:hover
+button:hover{
   background: #000;
   color: #fff;
+}
 
 textarea:focus,
 input:focus,
-button:focus
+button:focus{
     outline: none;
+}
 
-.qty
+.qty{
   text-align: center;
   border: none;
   width: 50px;
   background: none;
+}
 
-span
+span{
   top: -0.5px;
   position: relative;
+}
 
-
-input[type=number]::-webkit-inner-spin-button
+input[type=number]::-webkit-inner-spin-button{
   -webkit-appearance: none;
+}

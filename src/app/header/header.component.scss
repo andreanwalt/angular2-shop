@@ -1,22 +1,24 @@
-.navbar
+.navbar{
   height: 70px;
+}
 
-#logo
+#logo{
   margin: 0 auto;
   position: fixed;
   top: 10px;
   width: 160px;
   left: 50%;
   margin-left: -80px;
+}
 
-
-.cart-name
+.cart-name{
   width: 100%;
   display: inline-block;
   text-align: center;
   font-size: .7em;
+}
 
-#cart
+#cart{
   width: 160px;
   height: 58px;
   float: right;
@@ -30,19 +32,24 @@
   right: 0;
   padding-top: 10px;
 
-  a
+
+  a{
     color: #fff;
     text-decoration: none;
+  }
 
-  a:hover
-  color: #eee;
+  a:hover{
+    color: #eee;
+  }
 
-  .cart-name
+  .cart-name{
     position: relative;
     display: inline-block;
     bottom: -3px;
+  }
+}
 
-#login
+#login{
   min-width: 50px;
   height: 58px;
   float: right;
@@ -55,16 +62,17 @@
   padding-top: 10px;
   text-align: center;
 
-  span
+  span{
     position: relative;
     display: inline-block;
     bottom: -9px;
+  }
+}
 
 
 
 
-
-#search
+#search{
   min-width: 50px;
   height: 58px;
   float: left;
@@ -77,13 +85,14 @@
   padding-top: 10px;
   text-align: center;
 
-  span
+  span{
     position: relative;
     display: inline-block;
     bottom: -9px;
+  }
+}
 
-
-#search-input
+#search-input{
   min-width: 450px;
   height: 38px;
   float: left;
@@ -93,9 +102,9 @@
   padding-left: 20px;
   left: -80px;
   border: none;
+}
 
-
-#count
+#count{
   background: red;
   -webkit-border-radius: 90px;
   padding: 4px;
@@ -106,15 +115,15 @@
   left: -5px;
   font-size: .6em;
   display: inline-block;
+}
 
-
-#cart i
+#cart i{
   font-size: 14px !important;
-
+}
 
 
 /* Filter */
-#filter
+#filter{
   width: 80px;
   height: 300px;
   position: fixed;
@@ -122,11 +131,12 @@
   top: 50%;
   margin-top: -150px;
   background: red;
+}
 
-
-#color, #size, #details
+#color, #size, #details{
   width: 80px;
   height: 80px;
   background: #fff;
   border: none;
   border: solid 1px #000;
+}

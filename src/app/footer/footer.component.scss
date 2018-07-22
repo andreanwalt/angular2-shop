@@ -1,31 +1,39 @@
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:hover,
-.navbar-default .navbar-nav>.active>a:focus
+.navbar-default .navbar-nav>.active>a:focus{
     background: none;
+}
 
-
-a
+a{
   color: #fff !important;
+}
 
 .active,
 a:hover,
 a:active,
-a:focus
+a:focus{
   background-color: red !important;
+}
 
-.dropdown a
+.dropdown a{
   color: red;
+}
 
 .footer-bar-btns,
-.visible-xs
+.visible-xs{
   list-style: none;
+}
 
-@media (max-width: 767px)
-  ul, ol
+@media (max-width: 767px){
+  ul, ol{
     margin-bottom: 0px;
+  }
 
-  .visible-xs
+  .visible-xs{
     display: inline-block !important;
+  }
 
-  .navbar-header
+  .navbar-header{
     height: 50px;
+  }
+}

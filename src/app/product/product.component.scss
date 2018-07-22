@@ -1,4 +1,4 @@
-.headline
+.headlin{
   margin: 5px 0 5px 0;
   padding: 0;
   font-size: 15px;
@@ -7,32 +7,36 @@
   white-space: nowrap;
   overflow: hidden !important;
   text-overflow: ellipsis;
+}
 
-
-app-product
+app-product{
   width: 100%;
   overflow: hidden;
+}
 
-img
+img{
   width: 100%;
+}
 
-.size
+.size{
   position: relative;
   position: absolute;
   bottom: 60px;
   text-transform: uppercase;
+}
 
 /* order-list */
-.order-list
+.order-list{
   background: #ccc;
   padding: 2px 0 1px 0;
   position: absolute;
   bottom: 10px;
   width: calc(100% - 20px);
   box-sizing: border-box;
+}
 
 .inc span,
-.dec span
+.dec span{
   font-weight: 800;
   margin-top: -4px;
   margin-left: 1px;
@@ -41,8 +45,9 @@ img
   font-size: 18px;
   padding: 0;
   height: auto;
+}
 
-.inc
+.inc{
   width: 30px;
   height: 30px;
   padding: 5px;
@@ -51,8 +56,9 @@ img
   border: none;
   float: left;
   margin-right: 2px;
+}
 
-.dec
+.dec{
   width: 30px;
   height: 30px;
   padding: 5px;
@@ -62,8 +68,9 @@ img
   float: left;
   margin-right: 1px;
   margin-left: 2px;
+}
 
-.pieces
+.pieces{
   height: 32px;
   margin: 0;
   margin-top: -1px;
@@ -74,12 +81,14 @@ img
   margin-left: 0;
   text-align: center;
   outline: none;
+}
 
 
-input[type=number]::-webkit-inner-spin-button
+input[type=number]::-webkit-inner-spin-button{
   -webkit-appearance: none;
+}
 
-.order
+.order{
   width: calc(100% - 108px);
   height: 30px;
   padding: 5px;
@@ -90,55 +99,67 @@ input[type=number]::-webkit-inner-spin-button
   float: left;
   -webkit-transition:  .3s; /* Safari */
   transition:  .3s;
+}
 
-.order:hover
+.order:hover{
   background: #000;
   color: #fff;
+}
 
 textarea:focus,
 input:focus,
-button:focus
+button:focus{
     outline: none;
+}
 
-.price
+.price{
   float: right;
   font-size: 18px;
   font-weight: 500;
+}
 
 
-a[title]:hover::after
+a[title]:hover::after{
   content: attr(title);
   padding: 4px 8px;
   color: #FFF;
   background-color: black;
+}
 
-img:hover
+img:hover{
   cursor: pointer;
+}
 
-.order
+.order{
   color: #000;
   background: #fff;
+}
 
-.active .order
+.active .order{
   background: #000;
   color: #fff;
+}
 
-.active .order:hover
+.active .order:hover{
   background: #fff;
   color: #000;
+}
 
-.active:hover .order
+.active:hover .order{
   background: #000;
   color: #fff;
+}
 
 // distance price
-.description
+.description{
   width: 70%;
   float: left;
   height: 40px;
+}
 
-.details
+.details{
   font-size: .9em;
   text-align: left;
   float: left;
   width: 100%;
+}

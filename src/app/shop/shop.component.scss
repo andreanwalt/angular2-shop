@@ -1,9 +1,10 @@
-.wrapper
+.wrapper{
   overflow: hidden;
   width: 1350px;
   margin: 0 auto;
+}
 
-.panel
+.panel{
   width: calc(302px - 50px);
   height: 330px;
   background: #fff;
@@ -16,31 +17,35 @@
   position: relative;
   border: solid 1px #ccc;
   overflow: visible;
+}
 
 
-
-.panel:hover
+.panel:hover{
   -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
   box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
   background: #eee;
   -webkit-transition: .3s; /* Safari */
   transition: .3s;
+}
 
-.panel:hover a .new
+.panel:hover a .new{
   background: red;
+}
 
-.panel:hover a
+.panel:hover a{
   text-decoration: none;
+}
 
 /*products css*/
 
-.headline
+.headline{
   margin: 5px 0 5px 0;
   padding: 0;
   font-size: 15px;
+}
 
-.new
+.new{
   position: relative;
   left: -43px;
   font-size: 10px;
@@ -57,22 +62,26 @@
   border-width: 1px 1px 0px 1px;
   border-style: solid;
   border-bottom:  solid 1px #eee;
+}
 
-app-product
+app-product{
   width: 100%;
   overflow: hidden;
+}
 
-img
+img{
   width: 100%;
+}
 
-.size
+.size{
   position: relative;
   position: absolute;
   bottom: 60px;
   text-transform: uppercase;
+}
 
 /* order-list */
-.order-list
+.order-list{
   background: #ccc;
   overflow: hidden;
   padding: 2px 0 1px 0;
@@ -80,8 +89,9 @@ img
   bottom: 10px;
   width: calc(100% - 20px);
   box-sizing: border-box;
+}
 
-.inc
+.inc{
   width: 30px;
   height: 30px;
   padding: 5px;
@@ -90,8 +100,9 @@ img
   border: none;
   float: left;
   margin-right: 2px;
+}
 
-.dec
+.dec{
   width: 30px;
   height: 30px;
   padding: 5px;
@@ -101,8 +112,9 @@ img
   float: left;
   margin-right: 1px;
   margin-left: 2px;
+}
 
-.pieces
+.pieces{
   height: 32px;
   margin: 0;
   margin-top: -1px;
@@ -113,8 +125,9 @@ img
   margin-left: 0;
   text-align: center;
   outline: none;
+}
 
-.order
+.order{
   width: calc(100% - 108px);
   height: 30px;
   padding: 5px;
@@ -123,12 +136,13 @@ img
   color: #fff;
   border: none;
   float: left;
-
+}
 
 textarea:focus,
 input:focus,
-button:focus
+button:focus{
     outline: none;
+}
 
 
 
@@ -140,28 +154,33 @@ button:focus
 
 
 
-
-.search-results
+.search-results{
   height: 100%;
   // overflow: scroll;
+}
 
-.title
+.title{
   position: fixed;
   top: 0;
   left: 0;
   background-color: rgba(0,0,0,.5);
   color: white;
   width: 100%;
+}
 
-.modal.modal-open
+.modal.modal-open{
   display: block;
+}
 
-.modal-body
+.modal-body{
   max-height: 200px;
   overflow: auto;
+}
 
-.search-results.modal-open
+.search-results.modal-open{
   display: none;
+}
 
-.title small
+.title small{
   color: #eaeaea;
+}
